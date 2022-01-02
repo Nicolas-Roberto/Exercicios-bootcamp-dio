@@ -1,18 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/nota_1"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:background="@color/textFieldColor"
+        android:hint="@string/nota_1"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/nota_2"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/textFieldColor"
+        android:hint="@string/nota_2"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota_1"
+        app:layout_constraintVertical_bias="0.009"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/nota_3"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/textFieldColor"
+        android:hint="@string/nota_3"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota_2"
+        app:layout_constraintVertical_bias="0.008"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/nota_4"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/textFieldColor"
+        android:hint="@string/nota_4"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota_3"
+        app:layout_constraintVertical_bias="0.019"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/faltas"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="#7C000000"
+        android:hint="@string/faltas"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nota_4"
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="410dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/button"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faltas"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="200dp"
+        android:layout_height="162dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
+        app:layout_constraintVertical_bias="0.225" />
+
+</android.support.constraint.ConstraintLayout>
